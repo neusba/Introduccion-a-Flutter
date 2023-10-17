@@ -105,7 +105,7 @@ class Elementos extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(25, 0, 25, 10),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 236, 236, 236),
+                    color: const Color.fromARGB(255, 236, 236, 236),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: ListTile(
@@ -191,6 +191,11 @@ class _Cantidades extends State<Cantidades> {
             ),
           ]
         ),
+        IconButton(
+          onPressed: () => decrementa(),
+          icon: const Icon(
+            Icons.clear,
+          ))
       ]
     );
   }
